@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITRV</title>
+
+    <!--Fonte / Icons-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">   
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="stylesheets/base.css">
+</head>
+<body>
+
+    <%- include('./partials/header') %>
+
+    <main >
+
+   
+        <div class="banner_da_pagina_principal">
+
+            <form action="https://api.sheetmonkey.io/form/fma3GczWTFx39P4pqeNksq" class="formulario_oba" method="POST">  
+               
+                <label>Selecione quem esta fazendo o OBA</label>
+
+              <select name="User" id="User" required>
+                        <option  selected disabled >selecione</option>
+                        <option value="Bruno" >Bruno</option>
+                        <option value="Renan">Renan</option>
+                </select>
+
+                <div class="checkbox_do_formulario_do_oba">
+                    <input type="text" placeholder="Digite o numero de serie" id="serialNumber" name="serialNumber" required>
+                    <label for="serialNumber"></label>
+                </div>
+
+
+                <div class="selacao_do_sistema_operacional">
+                    <div>
+                        <input type="radio" name="sistemaOperacional" id="win7" value="win7" required ><label for="win7">Windows 7</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sistemaOperacional" id="win8" value="win8" required ><label for="win8">Windows 8</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sistemaOperacional" id="win10" value="win10" required ><label for="win10">Windows 10</label>
+                    </div>
+                  
+                </div>
+
+                
+                <div  class="checkbox_do_formulario_do_oba">
+                    <input type="checkbox" name="dispay" value="ok" id="display" required>
+                    <label for="dispay">DISPLAY</label>
+                </div>
+
+                <div  class="checkbox_do_formulario_do_oba">
+                    <input type="checkbox" name="teclado" value="ok" id="teclado" required>
+                    <label for="teclado">TECLADO</label>
+                </div>
+
+                <div  class="checkbox_do_formulario_do_oba">
+                    <input type="checkbox" name="touchpad" value="ok" id="touchpad" required>
+                    <label for="touchpad">TOUCHPAD</label>
+                </div>
+
+                <div  class="checkbox_do_formulario_do_oba">
+                    <input type="checkbox" name="usb" value="ok" id="usb" required>
+                    <label for="usb">USB</label>
+                </div>
+
+
+
+
+
+                <button type="submit">ENVIAR</button>
+            </form>
+ 
+
+
+        </div>
+
+
+              
+
+                
+
+
+            
+            
+           
+
+    </main>
+
+    <%- include('./partials/footer') %>
+
+    
+
+    
+</body>
+</html>
