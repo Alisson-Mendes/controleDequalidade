@@ -170,15 +170,71 @@ width: 85%;
     margin: 3%;
 }
 
-.pagina_estoque_principal_ul{
+.pagina_operacoes_principal_div{
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina_operacoes_principal_ul{
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    padding: 14vw;
+    padding: 5%;
     margin: 1%;
-    border: #072E83 solid 1px;
     
 
 }
 
 
+
+.pagina_operacoes_principal_ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #072E83;
+    color: white;
+    font-weight: bold;
+    width: 15%;
+}
+
+.pagina_operacoes_principal_ul li a{
+    color: white;
+    font-size: 2VW;
+    text-decoration: none;
+    padding: 6%;
+    background-color: #072E83;
+    border: #072E83 solid 1px;
+
+    
+}
+
+.msg_erro_login{
+    align-items: center;
+    background-color: #facccc;
+    padding: 3%;
+    margin-bottom: 3%;
+    color: red;
+    border-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.oba_ok_voltar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.registro_oba_ok_voltar{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    border: #072E83 solid 1px;
+    margin: 10%;
+
+}

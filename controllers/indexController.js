@@ -15,7 +15,14 @@ const controlador = {
     },
     operacoes: (req, res) => {
         res.render('operacoes')
+    },
+    precisaEstarLogado: (req, res) => {
+        res.render('precisaEstarLogado')
+    },
+    pedidos:(req, res) => {
+        res.render('pedidos')
     }
+    
   }
   
   module.exports = controlador;
