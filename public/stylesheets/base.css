@@ -236,5 +236,12 @@ width: 85%;
     padding: 3%;
     border: #072E83 solid 1px;
     margin: 10%;
+    width: 100%;
 
 }
+
+.pai_oba_pagina_princ{
+    width: 100%;
+    display: flex;
+}
+
