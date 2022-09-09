@@ -9,4 +9,6 @@ router.get('/login', indexController.login);
 router.get('/oba', indexController.oba);
 router.get('/obaOk', indexController.obaOk);
 
+router.get('/operacoes', indexController.operacoes);
+
 module.exports = router;

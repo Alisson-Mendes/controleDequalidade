@@ -12,6 +12,9 @@ const controlador = {
     },
     obaOk: (req, res) => {
         res.render('obaOk')
+    },
+    operacoes: (req, res) => {
+        res.render('operacoes')
     }
   }
   

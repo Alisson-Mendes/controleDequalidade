@@ -170,4 +170,15 @@ width: 85%;
     margin: 3%;
 }
 
+.pagina_estoque_principal_ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 14vw;
+    margin: 1%;
+    border: #072E83 solid 1px;
+    
+
+}
+
 
