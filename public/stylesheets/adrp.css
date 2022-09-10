@@ -1,3 +1,17 @@
-.pagina_de_principal_adrp{
-    border: black solid 1px;
+/* .pagina_de_principal_adrp{
+   
+
+   
+} */
+
+
+.form_pagina_adrp{
+    border: solid black 1px;
+    margin: 1% 4% 2% 4%;
+  
+}
+
+.central_texto{
+    display: flex;
+    flex-direction: row;
 }

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="stylesheets/base.css">
     <link rel="stylesheet" href="stylesheets/oba.css">
+    <link rel="stylesheet" href="stylesheets/leilao.css">
+    
 </head>
 <body>
 
@@ -28,51 +30,58 @@
    
         <div class="banner_da_pagina_principal_1">
 
-            <form action="https://api.sheetmonkey.io/form/2qYTJKuCcuqDxzL12i7u1N" class="formulario_oba" method="POST">  
+            <form action="https://api.sheetmonkey.io/form/36otBYLh2hY1J2gcaaqFTM" class="formulario_oba" method="POST">  
+                     
                 
-                <div class="separação">
+                    <div class="separação">
 
-                    <div>
+                        <div>
 
-                        <label>Selecione quem esta fazendo o OBA </label>
-                        <select class="selecionar_user" name="User" id="User" required>
-                            <option  selected disabled >selecione</option>
-                            <option value="Bruno" >Bruno</option>
-                            <option value="Renan" >Renan</option>
-
-                        </select>
-
-                        <div class="oba_NS_ordem">
-
-                            <div class="checkbox_do_formulario_do_oba">
-                                <label for="serialNumber"></label>
-                                <input type="text" placeholder="Digite o numero da TAG" id="serialNumber" name="serialNumber" required>
-                                
+                            <div>
+                                <label>Selecione quem esta fazendo o LEILÃO </label>
+                                <select class="selecionar_user" name="User" id="User" required>
+                                    <option  selected disabled >selecione</option>
+                                    <option value="Bruno" >Bruno</option>
+                                    <option value="Renan" >Renan</option>
+                                    <option value="Eduardo" >Eduardo</option>
+                                </select>
                             </div>
-    
-                            <div class="caixa_de_NS_Ordem">
-                                <label for="serialOrder">Numero da ordem</label>
-                                <input class="input_caixa_de_NS_Ordem" type="text" placeholder="Digite o numero da ORDEM" id="serialOrder" name="serialOrder" required>
+
+                            <div class="leilao_empresa_btn">                           
                                 
+                                    <input type="radio" name="leilao_empresa" id="leilao_empresa" value="Novelis" required ><label for="leilao_empresa">Novelis</label>
+                                    <input type="radio" name="leilao_empresa" id="leilao_empresa" value="Accenture" required ><label for="leilao_empresa">Accenture</label>
                             </div>
 
                         </div>
 
+                        <div>
+                            <h1 class="texto_destaque">LEILÃO</h1> 
+                        </div>
+                    </div>
 
+
+    
+                        <div class="checkbox_do_formulario_do_oba">
+    
+                            <div class="caixa_de_NS_Ordem">
+                                <input class="input_caixa_de_NS_Ordem" type="text" placeholder="Digite o numero da TAG" id="serialNumber" name="serialNumber" required>
+                                <label for="serialNumber"></label>
+                            </div>
         
-
-                    </div>
-
-                    <div>
-                        <h1 class="texto_destaque">OBA</h1> 
-                    </div>
-                </div>
-
-               
+                            <div class="caixa_de_NS_Ordem">
+                                <input class="input_caixa_de_NS_Ordem" type="text" placeholder="Digite o numero da ORDEM" id="serialOrder" name="serialOrder" required>
+                                <label for="serialOrder"></label>
+                            </div>
+        
+                           
+                        </div>
+    
 
                 <div class="ckeckbox_de_selecoes">
 
                     <div class="teste_div_check">
+
                         <label for="">Selecione o sistema operacional</label>
                         <div class="selacao_do_sistema_operacional">
                             
@@ -117,6 +126,7 @@
                     </div>
 
                     <div class="teste_div_check">
+
 
                         <div  class="checkbox_do_formulario_do_oba">
                             <input class="checkbox_do_formulario_do_oba_input" type="checkbox" name="ENTRADAS (USB,VGA,HDMI...)" value="ok" id="ENTRADAS (USB,VGA,HDMI...)" required>
@@ -172,6 +182,7 @@
                         <div  class="checkbox_do_formulario_do_oba">
                             <input  type="hidden" name="data" value=" <%= data[0] + "/" + data[1]+ "/" + data[2] %>  " id="data" >
                             <input  type="hidden" name="hora" value=" <%= hora[0] + ":" + hora[1]+ ":" + hora[2] %>  " id="hora" >
+                            
                         </div>
 
 

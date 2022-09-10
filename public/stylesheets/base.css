@@ -156,7 +156,7 @@ width: 85%;
     margin-top: 3%;
     width: 30%;
     padding: 1%;
-    margin: 10%;
+    margin: 1% 4% 2% 4%;
     
 }
 
@@ -244,4 +244,49 @@ width: 85%;
     width: 100%;
     display: flex;
 }
+
+.separação{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 10%;
+    margin-bottom: 1%;
+}
+
+.texto_destaque{
+    width: 110%;
+    font-size: 3rem;
+    font-weight: bold;
+    border: #072E83 solid 4px;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: #072E83;
+}
+
+.pagina_pedidos {
+
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.pagina_pedidos li a{
+    
+    font-size: 2rem;
+    text-decoration: none;
+    background-color: #072E83;
+    color: white;
+    padding: 5%;
+    padding-right: 36px;
+    padding-left: 36px;
+    
+}
+
+
+
+
 
