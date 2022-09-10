@@ -1,0 +1,70 @@
+.banner_da_pagina_principal_1{
+    display: flex;
+}
+
+
+.formulario_oba{
+    display: flex;
+    flex-direction: column;
+    margin: black solid 1px;
+    width: 100%;
+}
+
+.selecionar_user{
+    width: 30%;
+}
+
+
+
+.ckeckbox_de_selecoes{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.teste_div_check{
+    border: solid black 1px;
+    padding: 1%;
+    margin: 1%;
+    width: 100%;
+}
+
+.checkbox_do_formulario_do_oba{
+    display: flex;
+ 
+}
+
+.caixa_de_NS_Ordem{
+    margin-left: 3%;
+    
+}
+
+.input_caixa_de_NS_Ordem{
+    width: 110%;
+    
+}
+
+
+.checkbox_do_formulario_do_oba_input{
+    margin-right:  2%;
+    margin-bottom: 4%;
+}
+
+.botao_de_form_oba_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.botao_de_form_oba{
+
+    width: 30%;
+    height: 150%;
+    background-color: rgb(35, 113, 51);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+}
+
+

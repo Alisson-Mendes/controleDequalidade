@@ -14,6 +14,9 @@ router.get('/obaOk', indexController.obaOk);
 router.get('/operacoes', indexController.operacoes);
 router.get('/pedidos', indexController.pedidos);
 
+router.get('/adrp', indexController.adrp);
+
+
 
 
 module.exports = router;
