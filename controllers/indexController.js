@@ -1,4 +1,12 @@
 
+        function pegarDataBR(){
+            let data = new Date()
+            let dia = String(data.getDate()).padStart(2, '0') 
+            let mes = data.getMonth() + 1
+            let ano = data.getFullYear()
+            return [dia, mes, ano]
+        }
+
 const controlador = {
     home: (req, res) => {
         res.render('home')
@@ -8,7 +16,8 @@ const controlador = {
         res.render('login')
     },
     oba: (req, res) => {
-        res.render('oba')
+         let dataAtual =  pegarDataBR()
+        res.render('oba', {data: dataAtual})
     },
     obaOk: (req, res) => {
         res.render('obaOk')
@@ -21,6 +30,10 @@ const controlador = {
     },
     pedidos:(req, res) => {
         res.render('pedidos')
+    },
+    adrp:(req, res) =>{
+        let dataAtual =  pegarDataBR()
+        res.render('adrp', {data: dataAtual})
     }
     
   }
