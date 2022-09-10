@@ -1,0 +1,21 @@
+[
+ {
+  "id": 1,
+  "nome": "Alisson Carlos Mendes",
+  "matricula": "2208",
+  "Data_de_nascimento": "2022-09-17",
+  "email": "alissoncarlosmsj@gmail.com",
+  "telefone": "+5531989313315",
+  "senha": "$2b$10$ZMf4EQT7TWYVKb7hNolApO4/BgKnujdcTsOXp/b7hrU/ByhS7Tbhe",
+  "foto_de_perfil": "1662836782087Mini_23832.jpg"
+ },
+ {
+  "id": 2,
+  "nome": "Alisson Carlos Mendes",
+  "matricula": "2208",
+  "Data_de_nascimento": "2022-09-10",
+  "email": "aalissoncarlosmsj@gmail.com",
+  "telefone": "+5531989313315",
+  "senha": "$2b$10$rsRhjnCKZk7PNKKvGlhT4ulXGXIruj8Aujebq1rpAaB7p0YJC7Jky"
+ }
+]
