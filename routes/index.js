@@ -15,6 +15,7 @@ router.get('/operacoes', indexController.operacoes);
 router.get('/pedidos', indexController.pedidos);
 
 router.get('/adrp', indexController.adrp);
+router.get('/leilao', indexController.leilao);
 
 
 

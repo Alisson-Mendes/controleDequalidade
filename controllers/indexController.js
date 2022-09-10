@@ -34,6 +34,10 @@ const controlador = {
     adrp:(req, res) =>{
         let dataAtual =  pegarDataBR()
         res.render('adrp', {data: dataAtual})
+    },
+    leilao:(req, res) =>{
+        let dataAtual =  pegarDataBR()
+        res.render('leilao', {data: dataAtual})
     }
     
   }
