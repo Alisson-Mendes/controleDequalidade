@@ -6,6 +6,10 @@ const indexController = require('../controllers/indexController')
 
 router.get('/', indexController.home);
 router.get('/login', indexController.login);
+router.get('/login2', function(req, res, next) {
+    res.render('login2');
+  })
+
 router.get('/precisaEstarLogado', indexController.precisaEstarLogado);
 
 router.get('/oba', indexController.oba);
@@ -15,7 +19,10 @@ router.get('/operacoes', indexController.operacoes);
 router.get('/pedidos', indexController.pedidos);
 
 router.get('/adrp', indexController.adrp);
+router.get('/adrpOk', indexController.adrpOk);
+
 router.get('/leilao', indexController.leilao);
+router.get('/leilaoOk', indexController.leilaoOk);
 
 
 

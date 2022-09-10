@@ -14,16 +14,23 @@
     width: 30%;
 }
 
+.oba_NS_ordem{
+    display: flex;
+    align-items: center;
+}
+
 
 
 .ckeckbox_de_selecoes{
     display: flex;
     justify-content: space-around;
+    border: solid #072E83 5px;
+    margin-bottom: 1%;
 
 }
 
 .teste_div_check{
-    border: solid black 1px;
+    border-left: solid #072E83 1px;
     padding: 1%;
     margin: 1%;
     width: 100%;
@@ -35,12 +42,13 @@
 }
 
 .caixa_de_NS_Ordem{
+    width: 60%;
     margin-left: 3%;
     
 }
 
 .input_caixa_de_NS_Ordem{
-    width: 110%;
+    width: 70%;
     
 }
 
@@ -66,5 +74,6 @@
     font-size: 1rem;
     border: none;
 }
+
 
 

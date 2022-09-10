@@ -58,13 +58,24 @@ const controlador = {
     },
     adrp:(req, res) =>{
         let dataAtual =  pegarDataBR()
-        res.render('adrp', {data: dataAtual})
+        let horaAtual = pegarHoraBR()
+        res.render('adrp', {data: dataAtual, hora: horaAtual})
     },
+    adrpOk:(req, res) =>{
+
+        res.render('adrpOk')
+    },
+
     leilao:(req, res) =>{
         let dataAtual =  pegarDataBR()
-        res.render('leilao', {data: dataAtual})
+        let horaAtual = pegarHoraBR()
+        res.render('leilao', {data: dataAtual, hora: horaAtual})
+    },
+    leilaoOk:(req, res) =>{
+
+        res.render('leilaoOk')
     }
     
   }
   
-  module.exports = controlador;
+  module.exports = controlador; 

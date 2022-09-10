@@ -1,0 +1,21 @@
+.login{
+    display: flex;
+    flex-direction: column;
+}
+
+.master_login{
+    border: solid black 1px;
+    height: 100%;
+}
+
+.registro_login_ok__1{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 12%;
+    width: 100%;
+
+}

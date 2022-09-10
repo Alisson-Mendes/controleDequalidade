@@ -17,33 +17,51 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/leilao.css">
+    <link rel="stylesheet" href="stylesheets/login.css">
 </head>
 <body>
+
     <%- include('./partials/header') %>
 
-    <main class="master">
+    <main class="oba_ok_voltar" >
 
-        
+   
+        <div class="registro_login_ok__1">
 
-        <br><br><br><br><br><br>
-        <div class="login">
+            <div class="login">
             
-            <h2>Login</h2>
-            <br>
-            <input class="nome" type="text" placeholder="Nome">
-            <br><br>
-            <input class="nome" type="password" placeholder="Senha">
-            <br><br>
-            <button class="btnLogin">Enviar</button>
-        </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
+            
+                <form action="">
+                    <h2>Login</h2>
+                    <br>
+                    <input class="nome" type="text" placeholder="Nome">
+                    <br><br>
+                    <input class="nome" type="password" placeholder="Senha">
+                    <br><br>
+                    <button class="btnLogin" type="submit">Enviar</button>
+                </form>
+    
+    
+            </div>
         
+        </div>
+
+
+              
+
+                
+
+
+            
+            
+           
 
     </main>
 
-    <footer> Desenvolvido pelo time ITRV - Uso interno </footer>
+    <%- include('./partials/footer') %>
+
+    
 
     
 </body>
