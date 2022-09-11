@@ -45,7 +45,7 @@ const controlador = {
         let userExists = User.findUserByField('email', req.body.email) 
         let MatriculaExists = User.findUserByField('matricula', req.body.matricula)
 
-        console.log(userExists)
+        
 
         if(userExists != undefined || MatriculaExists != undefined){
             return res.render('cadastroDeUsuario', {falhaUsuario:'Este usuario ja existe'})
@@ -58,6 +58,8 @@ const controlador = {
 
        let usercreated =  User.create(userToCreate)
 
+       req.session.sucesso = true
+
        return res.redirect("/login")
     },
 
@@ -66,9 +68,9 @@ const controlador = {
     },
 
     login: (req, res) => {
-      //console.log(req.cookies.teste)
+      
 
-       res.render('login',{usuariologado: req.session.userLogged})
+       res.render('login',{sucesso:'Cadastro realizado com sucesso',usuariologado: req.session.userLogged, sucessoOk: req.session.sucesso})
     }, 
 
     loginProcess: (req, res) => {

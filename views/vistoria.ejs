@@ -17,14 +17,14 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/vistoria.css">
 </head>
 <body>
 
     <% if(usuariologado){ %> 
         <p class="nome_usuario_logado">  Logado: <%= usuariologado.nome %>  </p>
         <% } else { %> 
-            <p class="nome_usuario_deslogado"> <a class="botao_usuario_deslogado_em_cima" href="/login">Fazer Login</a>  </p>
-
+            <p class="nome_usuario_deslogado">Fazer Login</p>
             
             <% } %> 
 
@@ -33,11 +33,35 @@
     <main >
 
    
-        <div class="banner_da_pagina_principal">
+        <div class="banner_da_pagina_principal_1">
 
-            <section>
-                <a href="/precisaEstarLogado"><img class="imagem_1_banner_home" src="/images/ciclo-kaizen.png" alt=""></a>
-             </section>
+            <ul class="vistori_linha_1_opcoes">
+                <li class="botao_vistoria">
+                    <a class="botao_vistoria_a" href="/vistoriaMonitor">MONITOR</a> 
+                </li>
+
+                <li class="botao_vistoria">
+                    NOTEBOOK
+                </li>
+
+                <li class="botao_vistoria">
+                    DESKTOP
+                </li>
+            </ul>
+
+            <ul class="vistori_linha_1_opcoes">
+                <li class="botao_vistoria">
+                    SERVIDOR
+                </li>
+
+                <li class="botao_vistoria">
+                    TELEVISÃO
+                </li>
+
+                <li class="botao_vistoria">
+                    OUTROS
+                </li>
+            </ul>
  
 
 

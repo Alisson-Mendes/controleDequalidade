@@ -26,7 +26,7 @@
     <% if(usuariologado){ %> 
         <p class="nome_usuario_logado">  Logado: <%= usuariologado.nome %>  </p>
         <% } else { %> 
-            <p class="nome_usuario_deslogado">Fazer Login</p>
+            <p class="nome_usuario_deslogado"> <a class="botao_usuario_deslogado_em_cima" href="/login">Fazer Login</a>  </p>
             
             <% } %>  
          
@@ -44,8 +44,14 @@
             <br>
             
             <% if(locals.falhaLogin) { %>
-                <p style=" color:brown;">
-                <%= falhaLogin %>
+                <p style=" color:rgb(209, 32, 32);">
+                <b> <%= falhaLogin %></b>
+                       </p>
+               <% } %>
+
+               <% if(locals.sucessoOk) { %>
+                <p style=" color:rgb(42, 165, 79);">
+                <b><%= sucesso %> </b>
                        </p>
                <% } %>
   

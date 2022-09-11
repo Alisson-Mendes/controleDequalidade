@@ -36,11 +36,13 @@ const controlador = {
     },
 
     oba: (req, res) => {
+
+        if(req.session.userLogged.acesso != 3){
+            return res.redirect('/acessoNegado')
+        }
+
          let dataAtual =  pegarDataBR()
          let horaAtual = pegarHoraBR()
-
-
- 
 
         res.render('oba', {data: dataAtual, hora: horaAtual,usuariologado: req.session.userLogged})
     },
@@ -59,6 +61,11 @@ const controlador = {
         res.render('pedidos',{usuariologado: req.session.userLogged})
     },
     adrp:(req, res) =>{
+
+        if(req.session.userLogged.acesso != 1){
+            return res.redirect('/acessoNegado')
+        }
+
         let dataAtual =  pegarDataBR()
         let horaAtual = pegarHoraBR()
         res.render('adrp', {data: dataAtual, hora: horaAtual, usuariologado: req.session.userLogged})
@@ -69,6 +76,16 @@ const controlador = {
     },
 
     leilao:(req, res) =>{
+
+
+
+        if(req.session.userLogged.acesso != 1){
+            return res.redirect('/acessoNegado')
+        }
+
+
+
+
         let dataAtual =  pegarDataBR()
         let horaAtual = pegarHoraBR()
         res.render('leilao', {data: dataAtual, hora: horaAtual, usuariologado: req.session.userLogged})
@@ -77,6 +94,36 @@ const controlador = {
 
         res.render('leilaoOk',{usuariologado: req.session.userLogged})
     },
+    //--------------vistoria---------------------
+    vistoria:(req, res) =>{
+
+        if(req.session.userLogged.acesso != 4){
+            return res.redirect('/acessoNegado')
+        }
+
+        let dataAtual =  pegarDataBR()
+        let horaAtual = pegarHoraBR()
+        res.render('vistoria', {data: dataAtual, hora: horaAtual, usuariologado: req.session.userLogged})
+    },
+    vistoriaMonitor:(req, res) =>{
+        let dataAtual =  pegarDataBR()
+        let horaAtual = pegarHoraBR()
+        res.render('vistoriaMonitor', {data: dataAtual, hora: horaAtual, usuariologado: req.session.userLogged})
+    },
+    vistoriaMonitorOK:(req, res) =>{
+
+        res.render('vistoriaMonitorOK', { usuariologado: req.session.userLogged})
+    },
+
+
+    acessoNegado:(req, res) =>{
+  
+        res.render('acessoNegado', { usuariologado: req.session.userLogged})
+    },
+
+    
+
+
 
     estoque:(req, res) =>{
 
@@ -86,6 +133,9 @@ const controlador = {
 
         res.render('precisaEstarLogado',{usuariologado: req.session.userLogged})
     }
+    
+
+
     
   }
   

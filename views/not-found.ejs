@@ -17,30 +17,24 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/leilao.css">
 </head>
 <body>
 
-    <% if(usuariologado){ %> 
-        <p class="nome_usuario_logado">  Logado: <%= usuariologado.nome %>  </p>
-        <% } else { %> 
-            <p class="nome_usuario_deslogado"> <a class="botao_usuario_deslogado_em_cima" href="/login">Fazer Login</a>  </p>
 
-            
-            <% } %> 
 
     <%- include('./partials/header') %>
 
-    <main >
+    <main class="oba_ok_voltar" >
 
    
-        <div class="banner_da_pagina_principal">
+        <div class="registro_oba_ok_voltar">
 
-            <section>
-                <a href="/precisaEstarLogado"><img class="imagem_1_banner_home" src="/images/ciclo-kaizen.png" alt=""></a>
-             </section>
- 
+            <p class="titulo_do_ok">Ops! pagina não encontrada  404 </p>
 
-
+            <a class="botao_de_voltar_para_pagina_leilao" href="/">Clique aqui para voltar</a>
+            
+        
         </div>
 
 
