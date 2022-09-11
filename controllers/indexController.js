@@ -80,11 +80,11 @@ const controlador = {
 
     estoque:(req, res) =>{
 
-        res.render('login',{usuariologado: req.session.userLogged})
+        res.render('precisaEstarLogado',{usuariologado: req.session.userLogged})
     },
     administrativo:(req, res) =>{
 
-        res.render('login',{usuariologado: req.session.userLogged})
+        res.render('precisaEstarLogado',{usuariologado: req.session.userLogged})
     }
     
   }

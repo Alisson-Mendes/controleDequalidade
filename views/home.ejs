@@ -21,8 +21,11 @@
 <body>
 
     <% if(usuariologado){ %> 
-        <p class="nome_usuario_logado">  User: <%= usuariologado.nome %>  </p>
-        <% } %> 
+        <p class="nome_usuario_logado">  Logado: <%= usuariologado.nome %>  </p>
+        <% } else { %> 
+            <p class="nome_usuario_deslogado">Fazer Login</p>
+            
+            <% } %> 
 
     <%- include('./partials/header') %>
 
