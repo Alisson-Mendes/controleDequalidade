@@ -24,6 +24,7 @@
 {
     color: white;
     text-decoration: none;
+    margin: 1%;
     
 }
 .botao_criar_conta:hover{
@@ -33,3 +34,4 @@
 p{
     padding: 1%;
 }
+

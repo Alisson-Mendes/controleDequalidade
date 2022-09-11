@@ -17,16 +17,37 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="stylesheets/base.css">
-    <link rel="stylesheet" href="stylesheets/profile.css">
+    <link rel="stylesheet" href="stylesheets/leilao.css">
 </head>
 <body>
 
+    <% if(usuariologado){ %> 
+        <p class="nome_usuario_logado">   <%= usuariologado.nome %> </p>
+        <% } %> 
+
     <%- include('./partials/header') %>
 
-    <main  >
+    <main class="oba_ok_voltar" >
 
-        profile
+   
+        <div class="registro_oba_ok_voltar">
+
+            <p class="titulo_do_ok">Ola, <%= usuariologado.nome %>  </p>
+
+            <a class="botao_de_voltar_para_pagina_leilao" href="/logout">Sair</a>
+            
         
+        </div>
+
+
+              
+
+                
+
+
+            
+            
+           
 
     </main>
 

@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="stylesheets/base.css">
 </head>
 <body>
+
+    <% if(usuariologado){ %> 
+        <p class="nome_usuario_logado">   <%= usuariologado.nome %> </p>
+        <% } %> 
     <%- include('./partials/header') %>
 
     <main class="master">

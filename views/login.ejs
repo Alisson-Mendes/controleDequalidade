@@ -17,57 +17,53 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="stylesheets/base.css">
-    <link rel="stylesheet" href="stylesheets/leilao.css">
-    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="stylesheets/cadastro_de_usuario.css">
 </head>
 <body>
 
     <%- include('./partials/header') %>
 
-    <main class="oba_ok_voltar" >
 
-   
-        <div class="registro_login_ok__1">
+    <!--  -->
+    <main  >
 
-            <div class="login">
+        <form class="formUsuario" action="/login" method="POST" > 
+            <div class="cadastro">
+                <h1>LOGIN</h1> 
+            </div> 
+            <br>
             
-            
-                <form action="">
-                    <h2>Login</h2>
-                    <br>
-                    <input class="nome" type="text" placeholder="Nome">
-                    <br><br>
-                    <input class="nome" type="password" placeholder="Senha">
-                    <br><br>
-                    <button class="btnLogin" type="submit">ENTRAR</button>
-                    
-                    <div class="ficarLogado">
-    
-                        <div class="check">
-                            <input type="checkbox" class="form-check-input" id="ckeck" name="check">
-                            <label class="form-check-label" for="lembrarUsuario">Manter logado</label>
-                        </div>
-        
-                     </div>
-                     <P></P>
-                    
-                    <a class="botao_criar_conta" href="/cadastroUsuario">CRIAR CONTA</a>
-                </form>
-    
-    
-            </div>
-        
-        </div>
+            <% if(locals.falhaLogin) { %>
+                <p style=" color:brown;">
+                <%= falhaLogin %>
+                       </p>
+               <% } %>
+  
+            <label  for="matricula">Matricula</label> 
+            <input  type="text" name="matricula" required> <br>
 
 
-              
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" required> <br>
+    
 
+
+            <div class="ficarLogado">
+    
+                <div class="check">
+                    <input type="checkbox" class="form-check-input" id="lembrarUsuario" name="lembrarUsuario">
+                    <label class="form-check-label" for="lembrarUsuario">Manter logado</label>
+                </div>
                 
-
-
-            
-            
+            </div>
+    
            
+           <button class="botao_de_registrar" type="submit">ENTRAR</button>
+
+           <a class="botao_criar_conta" href="/cadastroUsuario">CRIAR CONTA</a>
+           </form>
+        
+        
 
     </main>
 

@@ -3,11 +3,24 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const session = require('express-session')
+  const cookies = require('cookie-parser')
+const loggerUserDataMiddle = require('./middlewares/loggerUserDataMiddle')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+app.use(session({
+secret: "SenhaMuitoSecreta",
+resave: false,
+saveUninitialized: false,
+}))
+
+  app.use(cookies())
+
+app.use(loggerUserDataMiddle)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

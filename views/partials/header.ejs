@@ -1,7 +1,29 @@
 <header class="cabecalho_pai">
     <a href="/"><img class="logo" src="https://itrv.com.br/wp-content/uploads/2017/07/itrv-logo.png" alt=""></a>   
-    <a class="btncabecalho" href="/precisaEstarLogado"> <div>ADMINISTRATIVO</div></a>
+    <a class="btncabecalho" href="/administrativo"> <div>ADMINISTRATIVO</div></a>
     <a class="btncabecalho" href="/operacoes"> <div>OPERAÇÕES</div></a>
-    <a class="btncabecalho" href="/precisaEstarLogado"> <div>ESTOQUE</div></a>
-    <a class="icone_login" href="/login"><span class="material-icons-outlined">person</span><b>Login</b></a> 
+    <a class="btncabecalho" href="/estoque"> <div>ESTOQUE</div></a>
+       
+
+        <% if(locals.isLogged){ %> 
+             
+             <a class="icone_login" href="/logout"><span class="material-icons-outlined">person</span><b> Sair  </b></a> 
+    
+
+        <% } else { %> 
+            
+            <a class="icone_login" href="/login"><span class="material-icons-outlined">person</span><b> Login  </b></a> 
+    
+        <% } %> 
+
+        
+
+        
+
+
+    
+    
+    
+    
+
 </header>
