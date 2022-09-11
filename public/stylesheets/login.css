@@ -15,7 +15,23 @@
     align-items: center;
     justify-content: center;
     padding: 3%;
-    margin: 12%;
+    margin: 13%;
     width: 100%;
 
 }
+
+.botao_criar_conta
+{
+    color: white;
+    text-decoration: none;
+    margin: 1%;
+    
+}
+.botao_criar_conta:hover{
+    color: rgb(148, 148, 243);
+}
+
+p{
+    padding: 1%;
+}
+

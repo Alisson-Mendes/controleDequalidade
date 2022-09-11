@@ -20,6 +20,10 @@
 </head>
 <body>
 
+    <% if(usuariologado){ %> 
+        <p class="nome_usuario_logado">  User: <%= usuariologado.nome %>  </p>
+        <% } %> 
+
     <%- include('./partials/header') %>
 
     <main >

@@ -1,0 +1,38 @@
+.formUsuario{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border: solid 1px black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1%;
+}
+
+.cadastro{
+    
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+h1{
+font-size: 1.5rem;
+}
+
+.botao_de_registrar{
+    width: 50%;
+    font-size: 1.3rem;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+.botao_de_registrar:hover{
+
+    background-color: rgb(49, 164, 49);
+} 
+
+

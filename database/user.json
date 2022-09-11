@@ -1,0 +1,13 @@
+[
+ {
+  "id": 1,
+  "nivel": "0",
+  "nome": "Alisson",
+  "Sobrenome": "Mendes",
+  "matricula": "2208",
+  "Data_de_nascimento": "1987-04-01",
+  "email": "alisson@itrv.com.br",
+  "telefone": "31989313315",
+  "senha": "$2b$10$ZmPSetQI9ECy8DtvdhOveep6z4hckWEr3uXkfZ3NtOa557sLB3UMC"
+ }
+]

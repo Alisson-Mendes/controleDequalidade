@@ -32,48 +32,59 @@ console.log(pegarHoraBR())
 
 const controlador = {
     home: (req, res) => {
-        res.render('home')
+        res.render('home',{usuariologado: req.session.userLogged})
     },
 
-    login: (req, res) => {
-        res.render('login')
-    },
     oba: (req, res) => {
          let dataAtual =  pegarDataBR()
          let horaAtual = pegarHoraBR()
 
-        res.render('oba', {data: dataAtual, hora: horaAtual})
+
+ 
+
+        res.render('oba', {data: dataAtual, hora: horaAtual,usuariologado: req.session.userLogged})
     },
     obaOk: (req, res) => {
-        res.render('obaOk')
+        res.render('obaOk',{usuariologado: req.session.userLogged})
     },
     operacoes: (req, res) => {
-        res.render('operacoes')
+        console.log(req.cookies.matricula)
+        res.render('operacoes',{usuariologado: req.session.userLogged})
     },
     precisaEstarLogado: (req, res) => {
-        res.render('precisaEstarLogado')
+        res.render('precisaEstarLogado',{usuariologado: req.session.userLogged})
     },
     pedidos:(req, res) => {
-        res.render('pedidos')
+
+        res.render('pedidos',{usuariologado: req.session.userLogged})
     },
     adrp:(req, res) =>{
         let dataAtual =  pegarDataBR()
         let horaAtual = pegarHoraBR()
-        res.render('adrp', {data: dataAtual, hora: horaAtual})
+        res.render('adrp', {data: dataAtual, hora: horaAtual, usuariologado: req.session.userLogged})
     },
     adrpOk:(req, res) =>{
 
-        res.render('adrpOk')
+        res.render('adrpOk',{usuariologado: req.session.userLogged})
     },
 
     leilao:(req, res) =>{
         let dataAtual =  pegarDataBR()
         let horaAtual = pegarHoraBR()
-        res.render('leilao', {data: dataAtual, hora: horaAtual})
+        res.render('leilao', {data: dataAtual, hora: horaAtual, usuariologado: req.session.userLogged})
     },
     leilaoOk:(req, res) =>{
 
-        res.render('leilaoOk')
+        res.render('leilaoOk',{usuariologado: req.session.userLogged})
+    },
+
+    estoque:(req, res) =>{
+
+        res.render('login',{usuariologado: req.session.userLogged})
+    },
+    administrativo:(req, res) =>{
+
+        res.render('login',{usuariologado: req.session.userLogged})
     }
     
   }

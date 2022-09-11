@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITRV</title>
+
+    <!--Fonte / Icons-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">   
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/cadastro_de_usuario.css">
+</head>
+<body>
+
+    <%- include('./partials/header') %>
+
+
+    <!--  -->
+    <main  >
+
+        <form class="formUsuario" action="/cadastroUsuario" method="POST" > 
+            <div class="cadastro">
+                <h1>CADASTRO DE USUARIO</h1> 
+            </div> 
+            <br>
+            
+    
+            <% if(locals.falhaImagem) { %>
+                <p style=" color:brown;">
+                    <%= falhaImagem %>
+                </p>
+                <% } %>
+            
+             <% if(locals.falhaUsuario) { %>
+                 <p style=" color:brown;">
+                 <%= falhaUsuario %>
+                        </p>
+                <% } %>
+            
+             
+            <input type="hidden" name="nivel" hidden value="0"  > 
+        
+            <label for="nome">Primeiro Nome</label> 
+            <input type="text" name="nome" placeholder="Digite apenas seu primeiro nome" required> <br>
+
+            <label for="Sobrenome">Sobrenome</label> 
+            <input type="text" name="Sobrenome" placeholder="Digite seu Sobrenome" required> <br>
+
+            <label for="matricula">Matricula</label> 
+            <input type="text" name="matricula" placeholder="Digite sua matricula" required> <br>
+
+            <label for="Data_de_nascimento">Data de nascimento</label> 
+            <input type="date" name="Data_de_nascimento"  required> <br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" required><br>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" placeholder="Digite seu telefone" required><br>
+
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="Criar uma senha" required> <br>
+    
+
+
+             <!-- <label for="foto_de_perfil">Escolha uma foto de perfil</label>
+             <input type="file" name="foto_de_perfil"><BR> -->
+    
+           
+           <button class="botao_de_registrar" type="submit">CADASTRAR</button>
+           </form>
+        
+        
+
+    </main>
+
+    <%- include('./partials/footer') %>
+
+    
+
+    
+</body>
+</html>
