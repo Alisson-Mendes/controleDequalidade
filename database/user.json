@@ -1,13 +1,46 @@
 [
  {
   "id": 1,
-  "nivel": "0",
+  "acesso": "5",
   "nome": "Alisson",
   "Sobrenome": "Mendes",
   "matricula": "2208",
-  "Data_de_nascimento": "1987-04-01",
-  "email": "alisson@itrv.com.br",
-  "telefone": "31989313315",
-  "senha": "$2b$10$ZmPSetQI9ECy8DtvdhOveep6z4hckWEr3uXkfZ3NtOa557sLB3UMC"
- }
+  "Data_de_nascimento": "2022-04-01",
+  "email": "alissoncarlosmsj@gmail.com",
+  "telefone": "+5531989313315",
+  "senha": "$2b$10$zIAW.wvVoO5wfiOaoMYsUeuN/vHfzkT/k2FfDOwBRoIjb6hH.LUVi"
+ },
+ {
+  "id": 2,
+  "acesso": "1",
+  "nome": "pedro",
+  "Sobrenome": "santos",
+  "matricula": "2222",
+  "Data_de_nascimento": "2022-09-02",
+  "email": "pedro@pedro.com",
+  "telefone": "123456",
+  "senha": "$2b$10$qDz/C8zzjND38FV3DB1YA.5cq.nEjACZvYWuytK5JjidfV0MqXCgK"
+ },
+ {
+  "id": 3,
+  "acesso": "4",
+  "nome": "maria",
+  "Sobrenome": "da penha",
+  "matricula": "1111",
+  "Data_de_nascimento": "2022-09-10",
+  "email": "maria@gmail.com",
+  "telefone": "111111",
+  "senha": "$2b$10$StW9kJ2QcE0hq3aSnRmxfes9/HrqAZx4ORaDChFn2kF0jnhdltDna"
+ },
+ {
+ "id": 3,
+ "acesso": "1",
+ "nome": "joao",
+ "Sobrenome": "da penha",
+ "matricula": "1212",
+ "Data_de_nascimento": "2022-09-10",
+ "email": "maria@gmail.com",
+ "telefone": "111111",
+ "senha": "$2b$10$StW9kJ2QcE0hq3aSnRmxfes9/HrqAZx4ORaDChFn2kF0jnhdltDna"
+}
 ]

@@ -288,6 +288,40 @@ width: 85%;
 }
 
 
+.nome_usuario_logado{
+    color: white;
+    background-color: green;
+    font-weight: bold;
+    padding-left: 1%;
+}
+
+.nome_usuario_deslogado{
+    
+    background-color: red;
+    font-weight: bold;
+    padding-left: 1%;
+
+}
+
+.botao_usuario_deslogado_em_cima{
+    color: white;
+    text-decoration: none;
+}
 
 
+.botao_operacao:hover{
+    background-color: #1e4bac;
+    padding-left: 35%;
+    padding-right: 35%;
+}
 
+.contador_monitor b{
+    display: flex;
+    color: red;
+    font-size: 4rem;
+    margin: 10%;
+    text-decoration: none;
+
+    /* contador de monotor vistoria */
+
+}

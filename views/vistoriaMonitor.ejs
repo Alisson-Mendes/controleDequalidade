@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITRV</title>
+
+    <!--Fonte / Icons-->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">     
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">   
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/oba.css">
+</head>
+<body>
+
+    <% if(usuariologado){ %> 
+        <p class="nome_usuario_logado">  Logado: <%= usuariologado.nome %>  </p>
+        <% } else { %> 
+            <p class="nome_usuario_deslogado">Fazer Login</p>
+            
+            <% } %> 
+
+    <%- include('./partials/header') %>
+
+    <main >
+
+   
+        <div class="banner_da_pagina_principal_1">
+
+            <form action="https://api.sheetmonkey.io/form/s1MCfnsB3WNybvBsA4qXVr" class="formulario_oba" method="POST">  
+                     
+                
+                    <div class="separação">
+                        <input type="hidden" name="User" hidden value=" <%= usuariologado.nome %>">
+
+                        <div>
+
+
+
+                        </div>
+
+                        <div>
+                            <h1 class="texto_destaque">VISTORIA - MONITOR</h1> 
+                        </div>
+                    </div>
+
+
+    
+
+    
+                   
+    
+
+                <div class="ckeckbox_de_selecoes">
+
+                    <div class="teste_div_check ">
+
+                        
+                        <div class="checkbox_do_formulario_do_oba">
+    
+                            <div class="caixa_de_NS_Ordem">
+                                <label for="serialNumber">TAG</label>
+                                <input class="input_caixa_de_NS_Ordem" type="text" placeholder="Digite o numero da TAG" id="serialNumber" name="serialNumber" required>
+                                
+                            </div>
+        
+                            <div class="caixa_de_NS_Ordem">
+                                <label for="serialOrder">PEDIDO</label>
+                                <input class="input_caixa_de_NS_Ordem" type="text" placeholder="Digite o numero do PEDIDO" id="serialOrder" name="serialOrder" required>
+                                
+                            </div>
+        
+                           
+                        </div>
+
+                        <div class="contador_monitor">
+                            <b href="">contador</b>
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="teste_div_check">
+
+                        <label for="">GRADE</label>
+                        <div class="selacao_do_sistema_operacional">
+                            
+                            <div>
+                                <input type="radio" name="grade" id="grade" value="A" required ><label for="grade">Grid A</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="grade" value="B" required ><label for="grade">Grid B</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="grade" value="C" required ><label for="grade">Grid C</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="grade" value="RECICLAGEM" required ><label for="grade">RECICLAGEM</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="grade" value="MANUTENÇÃO" required ><label for="grade">MANUTENÇÃO</label>
+                            </div>
+                          
+                        </div>
+
+                        <div  class="checkbox_do_formulario_do_oba">
+                            <label>Selecione o tamanho da tela </label>
+                            <select class="selecionar_user" name="tamanho_da_tela" id="tamanho_da_tela" required >
+                                <option  selected disabled >selecione</option>
+                                <option value='15"' >15"</option>
+                                <option value='17"' >17"</option>
+                                <option value='18.5"' >18.5"</option>
+                            </select>
+                        </div>
+        
+                        <label for="">CONDIÇÃO</label>
+                            <div class="selacao_do_sistema_operacional">
+                                
+                                <div>
+                                    <input type="radio" name="sistemaOperacional" id="win7" value="win7" required ><label for="win7">FUNCIONANDO</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="sistemaOperacional" id="win8" value="win8" required ><label for="win8">NÃO FUNCIONA</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="sistemaOperacional" id="win10" value="win10" required ><label for="win10">NÃO TESTADO</label>
+                                </div>
+
+
+                              
+                            
+                            </div>
+                        <div  class="checkbox_do_formulario_do_oba">
+                            <label for="obs">OBSERVAÇÕES</label>
+                            <input class="checkbox_do_formulario_do_oba_input" type="text" name="obs"  id="obs" required>
+                           
+                        </div>
+
+
+
+
+        
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                
+
+                <div  class="checkbox_do_formulario_do_oba">
+                    <input  type="hidden" name="data" value=" <%= data[0] + "/" + data[1]+ "/" + data[2] %>  " id="data" >
+                    <input  type="hidden" name="hora" value=" <%= hora[0] + ":" + hora[1]+ ":" + hora[2] %>  " id="hora" >
+                </div>
+
+                <div class="botao_de_form_oba_div">
+                    <button class="botao_de_form_oba" type="submit">ENVIAR</button>
+                </div>
+                
+            </form>
+ 
+
+
+        </div>
+
+
+              
+
+                
+
+
+            
+            
+           
+
+    </main>
+
+    <%- include('./partials/footer') %>
+
+    
+
+    
+</body>
+</html>

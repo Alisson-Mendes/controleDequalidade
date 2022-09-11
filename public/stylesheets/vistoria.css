@@ -1,0 +1,29 @@
+.vistori_linha_1_opcoes{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.botao_vistoria{
+    display: flex;
+    width: 16%;
+    background-color: #072E83;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding: 2%;
+    margin: 5%;
+}
+
+.botao_vistoria:hover{
+    background-color: #1f4088;
+    
+    
+}
+
+.botao_vistoria_a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    
+}

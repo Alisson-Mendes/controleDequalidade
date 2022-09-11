@@ -1,6 +1,6 @@
 function AdminUserMiddleware(req, res, next){
 
-    if(!req.session.userLogged.id == 1){
+    if(!req.session.userLogged.acesso == 5){
 
         
         return res.redirect('/')

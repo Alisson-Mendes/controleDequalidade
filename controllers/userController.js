@@ -45,7 +45,7 @@ const controlador = {
         let userExists = User.findUserByField('email', req.body.email) 
         let MatriculaExists = User.findUserByField('matricula', req.body.matricula)
 
-        console.log(userExists)
+        
 
         if(userExists != undefined || MatriculaExists != undefined){
             return res.render('cadastroDeUsuario', {falhaUsuario:'Este usuario ja existe'})
@@ -58,6 +58,8 @@ const controlador = {
 
        let usercreated =  User.create(userToCreate)
 
+       req.session.sucesso = true
+
        return res.redirect("/login")
     },
 
@@ -66,9 +68,9 @@ const controlador = {
     },
 
     login: (req, res) => {
-      //console.log(req.cookies.teste)
+      
 
-       res.render('login')
+       res.render('login',{sucesso:'Cadastro realizado com sucesso',usuariologado: req.session.userLogged, sucessoOk: req.session.sucesso})
     }, 
 
     loginProcess: (req, res) => {
@@ -85,14 +87,14 @@ const controlador = {
 
                 if(req.body.lembrarUsuario){
                     //res.cookie('matricula', req.body.matricula, {maxAge: (1000 * 60) * 30  })//(1000 * 60) é igual a 1 minuto \\ e  60 * 30 é igual a 30 minutos
-                    res.cookie('matricula', req.body.matricula, {maxAge: (1000 * 60) * 30 })
+                    res.cookie('matricula', req.body.matricula, {maxAge: (1000 * 60) * 230 })
                 }
 
 
                 return res.redirect('/operacoes')
             }          
         } 
-        res.render('login',{falhaLogin:'Usuario ou senha incorreta', })
+        res.render('login',{falhaLogin:'Usuario ou senha incorreta',usuariologado: req.session.userLogged })
     },
     logout: (req, res) => {
         res.clearCookie('matricula')

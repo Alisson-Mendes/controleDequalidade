@@ -13,12 +13,13 @@ const notLoggerUserMiddle = require('../middlewares/notLoggerUserMiddle')
 router.get('/', indexController.home);
 
 
-//rota de teste
+//rota de operações
 router.get('/1', function(req, res, next) {
     res.render('2');
   })
 
 router.get('/precisaEstarLogado', indexController.precisaEstarLogado);
+router.get('/acessoNegado', indexController.acessoNegado);
 
 router.get('/oba',notLoggerUserMiddle, indexController.oba);
 router.get('/obaOk',notLoggerUserMiddle, indexController.obaOk);
@@ -31,6 +32,12 @@ router.get('/adrpOk',notLoggerUserMiddle, indexController.adrpOk);
 
 router.get('/leilao',notLoggerUserMiddle, indexController.leilao);
 router.get('/leilaoOk',notLoggerUserMiddle, indexController.leilaoOk);
+
+router.get('/vistoria',notLoggerUserMiddle, indexController.vistoria);
+
+
+router.get('/vistoriaMonitor',notLoggerUserMiddle, indexController.vistoriaMonitor);
+router.get('/vistoriaMonitorOK',notLoggerUserMiddle, indexController.vistoriaMonitorOK);
 
 //rotas do estoque
 router.get('/estoque',notLoggerUserMiddle, indexController.estoque);

@@ -21,8 +21,12 @@
 <body>
 
     <% if(usuariologado){ %> 
-        <p class="nome_usuario_logado">   <%= usuariologado.nome %> </p>
-        <% } %> 
+        <p class="nome_usuario_logado">  Logado: <%= usuariologado.nome %>  </p>
+        <% } else { %> 
+            <p class="nome_usuario_deslogado">Fazer Login</p>
+            
+            <% } %> 
+            
     <%- include('./partials/header') %>
 
     <main class="master">
@@ -31,7 +35,7 @@
 
         <br><br><br><br><br><br>
         <div class="login">
-            <div class="msg_erro_login">Você precisa estar logado</div>
+            <div class="msg_erro_login">Solicite acesso</div>
             <h2>Login</h2>
             <br>
             <input class="nome" type="text" placeholder="Nome">

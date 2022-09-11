@@ -1,0 +1,4 @@
+1 = leilao
+1 = adrp
+3 = oba
+4 = vistoria

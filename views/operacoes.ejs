@@ -21,8 +21,11 @@
 <body>
 
     <% if(usuariologado){ %> 
-        <p class="nome_usuario_logado">   <%= usuariologado.nome %> </p>
-        <% } %> 
+        <p class="nome_usuario_logado">  Logado: <%= usuariologado.nome %>  </p>
+        <% } else { %> 
+            <p class="nome_usuario_deslogado">Fazer Login</p>
+            
+            <% } %> 
 
     <%- include('./partials/header') %>
 
@@ -31,16 +34,16 @@
    
         <div class="pagina_operacoes_principal_div">
 
-            <ul class="pagina_operacoes_principal_ul"> 
-                <li><a href="/precisaEstarLogado">PRODUÇAO</a></li> 
-                <li><a href="/precisaEstarLogado">VISTORIA</a></li>
-                <li><a href="/precisaEstarLogado">PREPARAÇÃO</a></li>
+            <ul class="pagina_operacoes_principal_ul "> 
+                <li ><a class="botao_operacao" href="/precisaEstarLogado">PRODUÇAO</a></li> 
+                <li ><a class="botao_operacao" href="/vistoria">VISTORIA</a></li>
+                <li ><a class="botao_operacao" href="/precisaEstarLogado">PREPARAÇÃO</a></li>
             </ul>
 
             <ul class="pagina_operacoes_principal_ul"> 
-                <li><a href="/pedidos">PEDIDOS</a></li> 
-                <li><a href="/oba">OBA</a></li>
-                <li><a href="/precisaEstarLogado">DOWNTIME</a></li>
+                <li ><a class="botao_operacao" href="/pedidos">PEDIDOS</a></li> 
+                <li ><a class="botao_operacao" href="/oba">OBA</a></li>
+                <li><a class="botao_operacao" href="/precisaEstarLogado">DOWNTIME</a></li>
             </ul>
 
 
