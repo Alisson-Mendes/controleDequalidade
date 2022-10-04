@@ -63,7 +63,7 @@
                         <div class="checkbox_do_formulario_do_oba">
     
                             <div class="caixa_de_NS_Ordem">
-                                <label for="serialNumber">TAG</label>
+                                <label for="serialNumber">Nº DE Serie</label>
                                 <input class="input_caixa_de_NS_Ordem" type="text" placeholder="Digite o numero da TAG" id="serialNumber" name="serialNumber" required>
                                 
                             </div>
@@ -103,10 +103,25 @@
                             <input class="checkbox_do_formulario_do_oba_input" type="checkbox" name="LAUDO" value="ok" id="LAUDO" required>
                             <label for="LAUDO">LAUDO</label>
                         </div>
-        
+                        
                         <div  class="checkbox_do_formulario_do_oba">
-                            <input class="checkbox_do_formulario_do_oba_input" type="checkbox" name="NOTA" value="ok" id="NOTA" required>
-                            <label for="NOTA">NOTA</label>
+                            <!-- <input class="checkbox_do_formulario_do_oba_input" type="checkbox" name="NOTA" value="ok" id="NOTA" >
+                            <label for="NOTA">NOTA</label> -->
+                            <!-- <label for="">NOTA</label> -->
+
+                          
+                            <div class="selacao_do_sistema_operacional">
+                                
+                                <div class="botao_nota_adrp">
+                                    <input type="radio" name="NOTA" id="NOTA" value="OK" required ><label for="NOTA">NOTA</label>
+                                </div>
+                                <div class="botao_nota_adrp">
+                                    <input type="radio" name="NOTA" id="NOTA" value="SEM NOTA" required ><label for="NOTA">SEM_NOTA</label>
+                                </div>
+
+                            </div>
+
+
                         </div>
                         <div  class="checkbox_do_formulario_do_oba">
                             <input class="checkbox_do_formulario_do_oba_input" type="checkbox" name="BIOS" value="ok" id="BIOS" required>
@@ -154,9 +169,20 @@
                             <label for="web_cam">WEB CAM</label>
                         </div>
 
-                        <div  class="checkbox_do_formulario_do_oba">
-                            <input class="checkbox_do_formulario_do_oba_input" type="checkbox" name="biometria" value="ok" id="biometria" required>
+                        <!-- <div  class="checkbox_do_formulario_do_oba">
+                            <input class="checkbox_do_formulario_do_oba_input" type="checkbox" name="biometria" value="ok" id="biometria" >
                             <label for="biometria">BIOMETRIA</label>
+                        </div> -->
+
+                        <div class="selacao_do_sistema_operacional">
+                            <!-- <label for="biometria">BIOMETRIA</label> -->
+                            <div class="botao_nota_adrp">
+                                <input type="radio" name="biometria" id="biometria" value="OK" required ><label for="biometria">BIOMETRIA </label>
+                            </div>
+                            <div class="botao_nota_adrp">
+                                <input type="radio" name="biometria" id="biometria" value="SEM BIOMETRIA" required ><label for="biometria">SEM_BIOMETRIA</label>
+                            </div>
+
                         </div>
 
 

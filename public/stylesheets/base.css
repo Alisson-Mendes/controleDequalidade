@@ -325,3 +325,9 @@ width: 85%;
     /* contador de monotor vistoria */
 
 }
+
+.botao_nota_adrp{
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+}

@@ -37,7 +37,7 @@ const controlador = {
 
     oba: (req, res) => {
 
-        if(req.session.userLogged.acesso != 3){
+        if(req.session.userLogged.acesso != 03){
             return res.redirect('/acessoNegado')
         }
 
@@ -79,7 +79,7 @@ const controlador = {
 
 
 
-        if(req.session.userLogged.acesso != 1){
+        if(req.session.userLogged.acesso != 0){
             return res.redirect('/acessoNegado')
         }
 

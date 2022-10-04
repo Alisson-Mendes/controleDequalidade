@@ -1,7 +1,7 @@
 [
  {
   "id": 1,
-  "acesso": "5",
+  "acesso": "1",
   "nome": "Alisson",
   "Sobrenome": "Mendes",
   "matricula": "2208",
@@ -33,14 +33,33 @@
   "senha": "$2b$10$StW9kJ2QcE0hq3aSnRmxfes9/HrqAZx4ORaDChFn2kF0jnhdltDna"
  },
  {
- "id": 3,
- "acesso": "1",
- "nome": "joao",
- "Sobrenome": "da penha",
- "matricula": "1212",
- "Data_de_nascimento": "2022-09-10",
- "email": "maria@gmail.com",
- "telefone": "111111",
- "senha": "$2b$10$StW9kJ2QcE0hq3aSnRmxfes9/HrqAZx4ORaDChFn2kF0jnhdltDna"
-}
+  "id": 3,
+  "acesso": "1",
+  "nome": "joao",
+  "Sobrenome": "da penha",
+  "matricula": "1212",
+  "Data_de_nascimento": "2022-09-10",
+  "email": "maria@gmail.com",
+  "telefone": "111111",
+  "senha": "$2b$10$StW9kJ2QcE0hq3aSnRmxfes9/HrqAZx4ORaDChFn2kF0jnhdltDna"
+ },
+ {
+  "id": 4,
+  "acesso": "0",
+  "nome": "Marcos",
+  "Sobrenome": "Vinicius",
+  "matricula": "5815",
+  "Data_de_nascimento": "1993-08-09",
+  "email": "marcos@itrv.com.br",
+  "telefone": "11980549448",
+  "senha": "$2b$10$ncPAk/wXrpXMvVqtW87wlO.QML1jFCuRqfOeM22g0Dty/qDeFx9H6"
+ },
+ {
+  "id": 5,
+  "acesso": "0",
+  "nome": "teste",
+  "Sobrenome": "teste",
+  "matricula": "222222",
+  "senha": "$2b$10$vB45Akvgw.bmMjVKcpyPVe5NukCejuWbGfUdmjU6am5wa06HJy6.2"
+ }
 ]
