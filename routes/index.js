@@ -39,6 +39,10 @@ router.get('/vistoria',notLoggerUserMiddle, indexController.vistoria);
 router.get('/vistoriaMonitor',notLoggerUserMiddle, indexController.vistoriaMonitor);
 router.get('/vistoriaMonitorOK',notLoggerUserMiddle, indexController.vistoriaMonitorOK);
 
+router.get('/linhaBeta',notLoggerUserMiddle, indexController.linhaBeta);
+router.get('/linhaBetaLancamentoOK',notLoggerUserMiddle, indexController.linhaBetaLancamentoOK);
+
+
 //rotas do estoque
 router.get('/estoque',notLoggerUserMiddle, indexController.estoque);
 

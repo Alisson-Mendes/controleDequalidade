@@ -115,6 +115,18 @@ const controlador = {
         res.render('vistoriaMonitorOK', { usuariologado: req.session.userLogged})
     },
 
+    linhaBeta:(req, res) =>{
+        let dataAtual =  pegarDataBR()
+        let horaAtual = pegarHoraBR()
+
+        res.render('linha_beta', {data: dataAtual, hora: horaAtual, usuariologado: req.session.userLogged})
+    },
+
+    linhaBetaLancamentoOK:(req, res) =>{
+
+        res.render('linha_beta_ok', { usuariologado: req.session.userLogged})
+    },
+
 
     acessoNegado:(req, res) =>{
   
